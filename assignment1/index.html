@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"
+	href="index.css">
+	<title>Organic Food Made Easy and Healthy</title>
+	<style>
+		header {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+
+		nav {
+			background-color: #333;
+			overflow: hidden;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		nav a {
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		nav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		nav a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		#search-container {
+			display: flex;
+			align-items: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			justify-content: center;
+		}
+
+		#search-input {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			margin-right: 10px;
+			width: 200px;
+		}
+
+		#search-button {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		#search-button:hover {
+			background-color: #3e8e41;
+		}
+
+		.flex-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		.flex-item {
+			margin-right: 20px;
+		}
+
+		.clock-icon {
+			font-size: 30px;
+			color: #333;
+		}
+
+		.leaf-icon {
+			font-size: 30px;
+			color: #333;
+		}
+
+		.house-icon {
+			font-size: 30px;
+			color: #333;
+		}
+
+		.truck-icon {
+			font-size: 30px;
+			color: #333;
+		}
+
+		.booking-bar {
+			background-color: #4CAF50;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			padding: 10px;
+		}
+
+		.booking-bar select {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			margin-right: 10px;
+			width: 200px;
+		}
+
+		.booking-bar button {
+			background-color: white;
+			color: #4CAF50;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+
+		.booking-bar button:hover {
+			background-color: #3e8e41;
+			color: white;
+		}
+
+		.choose-to-enjoy {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.choose-to-enjoy h2 {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap
+            .grid-item {
+			padding: 20px;
+			text-align: center;
+		}
+
+		.grid-item img {
+			width: 100%;
+			max-width: 200px;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Organic Food Made Easy and Healthy</h1>
+	</header>
+	<nav>
+		<a class="active" href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Menu</a>
+		<a href="#">Reservation</a>
+		<a href="#">Account</a>
+		<a href="#">Contact Now</a>
+	</nav>
+	<div id="search-container">
+		<input type="text" placeholder="Search" id="search-input">
+		<button id="search-button">Search</button>
+	</div>
+	<div class="flex-container">
+		<div class="flex-item">
+			<i class="fas fa-clock clock-icon"></i><br>
+			24hr
+		</div>
+		<div class="flex-item">
+			<i class="fas fa-leaf leaf-icon"></i><br>
+			Nature First
+		</div>
+		<div class="flex-item">
+			<i class="fas fa-home house-icon"></i><br>
+			Home Services
+		</div>
+		<div class="flex-item">
+			<i class="fas fa-truck truck-icon"></i><br>
+			Delivery
+		</div>
+	</div>
+	<div class="booking-bar">
+		<label for="date">Pick a date:</label>
+		<select id="date">
+			<option value="today">Today</option>
+			<option value="tomorrow">Tomorrow</option>
+			<option value="next-week">Next Week</option>
+		</select>
+		<label for="time">Select time:</label>
+		<select id="time">
+			<option value="morning">Morning</option>
+			<option value="afternoon">Afternoon</option>
+			<option value="evening">Evening</option>
+		</select>
+		<label for="people">Select people:</label>
+		<select id="people">
+			<option value="1">1 person</option>
+			<option value="2">2 people</option>
+			<option value="3">3 people</option>
+			<option value="4">4 people</option>
+		</select>
+		<button>Book Now</button>
+	</div>
+	<div class="choose-to-enjoy">
+		<h2>Choose to Enjoy</h2>
+		<div class="grid-container">
+			<div class="grid-item">
+				<img src="https://via.placeholder.com/200x200.png?text=Image+1">
+				<p>Image 1</p>
+			</div>
+			<div class="grid-item">
+				<img src="https://via.placeholder.com/200x200.png?text=Image+2">
+				<p>Image 2</p>
+			</div>
+			<div class="grid-item">
+				<img src="https://via.placeholder.com/200x200.png?text=Image+3">
+				<p>Image 3</p>
+			</div>
+			<div class="grid-item">
+				<img src="https://via.placeholder.com/200x200.png?text=Image+4">
+				<p>Image 4</p>
+			</div>
+			<div
+            <div class="grid-item">
+				<img src="https://via.placeholder.com/200x200.png?text=Image+5">
+				<p>Image 5</p>
+			</div>
+			<div class="grid-item">
+				<img src="https://via.placeholder.com/200x200.png?text=Image+6">
+				<p>Image 6</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section">
+		<div class="image-container">
+			<img src="https://via.placeholder.com/400x300.png?text=Special+Offer+Image">
+		</div>
+		<div class="content-container">
+			<h2>Special Offer</h2>
+			<p>50% off using coupon code: uh6009</p>
+			<button>Order Now</button>
+		</div>
+
+		<div class="section">
+			<h2>Why Choose Us</h2>
+			<div class="features">
+				<div class="feature">
+					<img src="https://via.placeholder.com/50x50.png?text=Toolbox+Logo">
+					<p>10+ years experience</p>
+				</div>
+				<div class="feature">
+					<img src="https://via.placeholder.com/50x50.png?text=Photo+Icon">
+					<p>200+ professional chefs</p>
+				</div>
+				<div class="feature">
+					<img src="https://via.placeholder.com/50x50.png?text=Trophy+Logo">
+					<p>20 awards won</p>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<h2>Customer Reviews</h2>
+			<div class="review">
+				<div class="review-text">
+					<p>John Doe: I ordered food and they had quick service.</p>
+				</div>
+			</div>
+			<div class="review">
+				<div class="review-text">
+					<p>John Smith: I ordered food and they had quick service.</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="section">
+		<h2>Navigation</h2>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Our Chefs</a></li>
+			<li><a href="#">Our Blog</a></li>
+		</ul>
+	</div>
+
+	<div class="section">
+		<h2>Popular Categories</h2>
+		<ul>
+			<li><a href="#">Chicken</a></li>
+			<li><a href="#">Mutton</a></li>
+			<li><a href="#">Vegetarian</a></li>
+		</ul>
+	</div>
+
+	<div class="section">
+		<h2>Reach Us</h2>
+		<ul>
+			<li>0909474747848</li>
+			<li>0909844484848</li>
+		</ul>
+	</div>
+
+	<div class="section">
+		<h2>Connect</h2>
+		<ul class="social-icons">
+			<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+		</ul>
+	</div>
+  
+</body>
+</html>
